@@ -1,0 +1,65 @@
+remote_theme: jhoelzel/jekyll-theme-yat
+title: "{ Hoelzel.IT }"
+email: your-email@domain.com
+author: Johannes Hölzel
+
+copyright: >-
+  Random ramblings of an IT veteran for future documentation purposes. <br />
+  © {currentYear} {author} <br /> No guarantees, please use everything at your own discretion.
+description: >- # this means to ignore newlines until "baseurl:"
+  Random ramblings of an IT veteran for future documentation purposes.
+
+#baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.hoelzel.it/de" # the base hostname & protocol for your site, e.g. http://example.com
+favicon: "" # the favicon for your site
+
+# Night/Dark mode
+# Default mode is "auto", "auto" is for auto nightshift
+# (19:00 - 07:00), "manual" is for manual toggle, and
+# "on/off" is for default on/off.
+#
+# Whatever the user's choice is, it will supersede the
+# default setting of the site and be kept during the
+# visit (session). Only the dark mode setting is"manual",
+# it will be always kept on every visit (i.e. no matter
+# the browser is closed or not)
+#
+night_mode: "auto"
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+  - index.html
+  - categories.html
+  - tags.html
+  - about.md
+
+code_badge:
+  enabled: "true"
+  color: "#fff"
+  background_color: "#ff4e00"
+  text_transform: "uppercase"  # ("uppercase", "lowercase", "capitalize")
+
+paginate: 5
+
+# Page default value
+defaults:
+  home:
+    heading: "DocOps by Johannes Hölzel"
+    subheading: "blubb"
+    banner: "https://jhoelzel.github.io/img/blog_cover.png"
+  about:
+    heading: "DocOps by Johannes Hölzel"
+    subheading: "Wer schreibt der bleibt! (he who documents prevails) - german wisdom"
+    banner: "https://jhoelzel.github.io/img/blog_cover.png"
+# Build settings
+# highlighter: none
+markdown: kramdown
+kmarkdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-spaceship
